@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "compile": "npx hardhat compile"
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run --network goerli scripts/deploy.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -17,7 +18,10 @@
     "@mui/material": "^5.10.9",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+    "@openzeppelin/contracts": "^4.7.3",
     "chai": "^4.3.6",
+    "dotenv": "^16.0.3",
+    "env-var": "^7.3.0",
     "eslint-plugin-prettier": "^4.2.1",
     "next": "12.3.1",
     "react": "18.2.0",
