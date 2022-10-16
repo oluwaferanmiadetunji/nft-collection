@@ -3,4 +3,4 @@ import createEmotionCache from './CreateEmotionCache'
 
 export default Theme
 
-export {createEmotionCache}
+export { createEmotionCache }

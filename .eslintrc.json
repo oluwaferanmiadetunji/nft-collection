@@ -1,12 +1,16 @@
 {
-  "plugins": [
-    "@typescript-eslint",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["@typescript-eslint", "@typescript-eslint", "prettier"],
   "extends": "next/core-web-vitals",
   "rules": {
     "prefer-const": "error",
     "@typescript-eslint/no-unused-vars": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
   }
 }
